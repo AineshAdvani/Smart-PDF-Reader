@@ -1,16 +1,13 @@
 
-This is a Python application that allows you to load a PDF and ask questions about it using natural language. The application uses a LLM to generate a response about your PDF. The LLM will not answer questions unrelated to the document.
+This application allows you to load a PDF and ask questions about it using natural language. The application uses a OpenAi's LLM to generate a response about your PDF. The LLM will not answer questions unrelated to the document.
 
-## How it works
+## Working
 
-The application reads the PDF and splits the text into smaller chunks that can be then fed into a LLM. It uses OpenAI embeddings to create vector representations of the chunks. The application then finds the chunks that are semantically similar to the question that the user asked and feeds those chunks to the LLM to generate a response.
-
-The application uses Streamlit to create the GUI and Langchain to deal with the LLM.
-
+The application works by splitting the PDF into smaller chunks so that they can be fed into the LLM. It uses OpenAI embeddings to create vector representations of the chunks. The application then finds the chunks that are semantically similar to the question that the user asked and feeds those chunks to the LLM to generate a response.
 
 ## Installation
 
-To install the repository, please clone this repository and install the requirements:
+Please clone the repository and install the requirements:
 
 ```
 pip install -r requirements.txt
